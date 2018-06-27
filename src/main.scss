@@ -12,7 +12,7 @@ $font-family: 'Helvetica Neue', Helvetica, Arial, "Microsoft YaHei", sans-serif;
 
 body {
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   font-family: $font-family;
   -webkit-font-smoothing: antialiased;
@@ -68,6 +68,8 @@ a {
   position: relative;
   width: 1024px;
   margin: 50px auto;
+  font-size: 16px;
+  font-weight: 500;
   @include border-radius(5px);
   background-color: #fff;
   overflow: hidden;
@@ -80,7 +82,7 @@ a {
 
 .content-hd {
   width: 100%;
-  padding: 30px 50px;
+  padding: 14px 50px;
   color: #fff;
   background-color: $color-green;
   overflow: hidden;
@@ -97,7 +99,6 @@ a {
     font-size: 52px;
     font-weight: 300;
     overflow: hidden;
-    padding-bottom: 5px;
     margin-bottom: 5px;
   }
   .name,
@@ -153,7 +154,7 @@ a {
   }
   .info {
     float: left;
-    line-height: 22px;
+    line-height: 26px;
   }
   .contact {
     float: right;
@@ -202,10 +203,10 @@ a {
 .content-bd {
   width: 100%;
   min-height: 200px;
-  padding: 20px 30px 50px;
+  padding: 0 30px 50px;
   overflow: hidden;
   @media screen and (max-width: 720px) {
-    padding: 20px 20px 50px;
+    padding: 10px 20px 50px;
   }
   .content-left,
   .content-right {
@@ -233,9 +234,12 @@ a {
   .section-bd {
     overflow: hidden;
     ul {
+      margin-bottom: 10px;
       li {
         margin-top: 8px;
-        list-style: square inside;
+        list-style-position: outside;
+        list-style-type: square;
+        margin-left: 20px;
       }
     }
 
@@ -282,10 +286,13 @@ a {
     overflow: hidden;
     font-weight: 500;
     min-height: 30px;
+    border-bottom: 1px dotted $color-gray;
+    margin-bottom: 10px;
     .item-time {
       display: inline-block;
       float: left;
       width: 25%;
+      font-size: 14px;
       @media screen and (max-width: 720px) {
         width: 100%;
         margin-bottom: 5px;
@@ -297,14 +304,36 @@ a {
       right: 0;
     }
     .item-name {
+      font-size: 18px;
+      font-weight: bold;
       float: left;
+      margin-bottom: 5px;
+    }
+    .item-skill {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      font-size: 16px;
+      font-weight: bold;
+      @media screen and (max-width: 720px) {
+        width: 100%;
+        margin-bottom: 5px;
+      }
     }
   }
   .item-bd {
     margin-bottom: 5px;
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 17px;
+      color: $color-green;
+    }
   }
   .item-des {
-    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
   .section-content {
     text-align: justify;
