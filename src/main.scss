@@ -238,7 +238,7 @@ a {
       li {
         margin-top: 8px;
         list-style-position: outside;
-        list-style-type: square;
+        list-style-type: circle;
         margin-left: 20px;
       }
     }
@@ -287,10 +287,29 @@ a {
     font-weight: 500;
     min-height: 30px;
     border-bottom: 1px dotted $color-gray;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    background-size: 110px 30px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    &.company {
+      padding-left: 120px;
+      @media screen and (max-width: 720px) {
+        padding-left: 0;
+        background-image: none !important;
+      }
+      @media print {
+        padding-left: 0;
+        background-image: none !important;
+      }
+    }
+    &.upchina {
+      background-image: url(./img/upchina_logo.png);
+    }
+    &.isoftstone {
+      background-image: url(./img/isoftstone_log.png);
+    }
     .item-time {
       display: inline-block;
-      float: left;
       width: 25%;
       font-size: 14px;
       @media screen and (max-width: 720px) {
@@ -307,7 +326,7 @@ a {
       font-size: 18px;
       font-weight: bold;
       float: left;
-      margin-bottom: 5px;
+      margin-bottom: 2px;
     }
     .item-skill {
       display: inline-block;
@@ -321,19 +340,18 @@ a {
       }
     }
   }
-  .item-bd {
-    margin-bottom: 5px;
-    code {
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: bold;
-      font-size: 17px;
-      color: $color-green;
-    }
-  }
   .item-des {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
+  }
+  .item-bd {
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 16px;
+      color: $color-green;
+    }
   }
   .section-content {
     text-align: justify;
