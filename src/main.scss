@@ -246,6 +246,11 @@ a {
     .item {
       margin-bottom: 20px;
     }
+    .summary {
+      font-size: 90%;
+      padding-left: 8px;
+      border-left: 3px solid $color-green
+    }
   }
   .section-title-l,
   .section-title-r {
@@ -327,6 +332,10 @@ a {
       font-weight: bold;
       float: left;
       margin-bottom: 2px;
+      sub {
+        font-size: 70%;
+        font-weight: normal;
+      }
     }
     .item-skill {
       display: inline-block;
