@@ -9,7 +9,7 @@
   <base target="_blank">
 </head>
 <body>
-<p class="last-modified">最后更新于2019年4月</p>
+<p class="last-modified">最后更新于2019年7月</p>
 <a class="download-pdf" href="resume.pdf">下载 PDF</a>
 
 <main class="content">
@@ -28,8 +28,8 @@
       <ul>
         <li>男 / 1993.10</li>
         <li>工作年限：3.5 年</li>
-        <li>武汉工程大学</li>
-        <li>计算机网络<sub>(专科)</sub></li>
+        <li>武汉工程大学<sub>职业技术学院</sub</li>
+        <li>计算机网络<sub>专科</sub></li>
       </ul>
     </section>
     <section class="contact">
@@ -106,65 +106,76 @@
           <!--经历:工作-->
           <div class="item">
             <header class="item-hd company upchina">
-              <h3 class="item-name">优品科技（武汉）</h3>
+              <h3 class="item-name">优品财富（武汉）</h3>
               <span class="item-time">2017.05 至今</span>
               <a class="btn item-more" href="javascript:;">web前端 & Node.js</a>
             </header>
             <div class="item-bd">
-              <h4 class="item-des">优投顾 App 投顾高手项目</h4>
+              <h4 class="item-des">优投顾、股牛牛APP产品移动端web开发</h4>
               <ul class="section-content">
-                <li>负责公司核心产品之一的 <a href="https://www.upchina.com/sub/dl_app_ytg.html">优投顾App</a>非原生部分的前端开发工作，建立百万用户与投顾之间的互动桥梁。</li>
-                <li>服务器端使用 Node.js服务（<code>Express</code> 框架）作为 BFF 层，聚合众多后端数据接口，根据 UI 设计前端接口。服务器页面直出与异步请求相结合，兼顾用户体验与性能。</li>
-                <li>前端采用传统多页面模式（<code>Vue.js</code>框架）,<code>JS Bridge</code>多开页面及其他复杂 Native 交互。前后端统一<code>ES6</code>语法，使用<code>webpack</code>构建前端代码</li>
+                <li>负责公司核心产品 <a href="https://www.upchina.com/sub/dl_app_ytg.html">优投顾</a>、股牛牛App中投顾业务开发，建立百万用户与投顾之间的互动桥梁</li>
+                <li>服务器端使用 <code>Node.js</code>服务作为 BFF 层，基于<a href="https://github.com/TarsCloud"><code>TAF/Tars</code></a>RPC框架，调用其他基础服务接口进行聚合优化，保障前端体验与性能</li>
+                <li>前端使用<code>Vue.js</code>与<code>JSBridge</code>进行Hybrid开发，构建交互复杂的移动端web应用</li>
               </ul>
             </div>
-            <!-- <div class="item-bd">
-              <h4 class="item-des">港股开户代理人平台</h4>
-              <ul class="section-content">
-                <li>包括账号系统、扫码拉新开户、代理人收益主页、客户盈亏概览等全部功能的开发</li>
-                <li>使用 <code>Express</code>和 <code>Vue.js</code>开发的移动端 <code>SPA</code>。服务器提供 <code>RESTful API</code>配合 <code>vue-router</code> 的前端路由</li>
-                <li>使用 <code>Dchache</code>（内部的缓存服务，类似 Redis 键值对方式存储数据，有数据自动落地 DB机制）存储、缓存业务数据</li>
-              </ul>
-            </div> -->
             <div class="item-bd">
-              <h4 class="item-des">倍牛港股交易平台</h4>
+              <h4 class="item-des">倍牛证券、东北证券等券商业务web开发</h4>
               <ul class="section-content">
-                <li>公司合作的<a href="https://www.9beiniu.com/">倍牛证券</a>web端项目，从0到1完成包括开户、账户、股票交易、出入金，历史等功能模块</li>
-                <li><code>Node.js</code> web 服务，依托公司的 RPC 框架（腾讯开源 <a href="https://github.com/TarsCloud">Tars</a>部署，调用其他基础服务。</li>
-                <li>采用 MVC 模式组织代码，细粒度划分功能模块，提取公共路由中间件。</li>
-                <li>大量的基于ejs模板的服务器端渲染，便于组装填充数据提升性能。使用 Gulp、Babel 等工具提升开发效率与体验。 </li>
+                <li>负责<a href="https://www.9beiniu.com/">倍牛证券</a>交易平台/开户系统web端开发，东北证券投顾/产品签约业务功能模块开发开发</li>
+                <li>使用<code>Sequelize</code>配合<code>Dcache</code>(TAF框架配套的缓存服务，类似 Redis)实现业务逻辑</li>
+                <li>PC端使用 <code>Express</code>框架 EJS 模板引擎服务端渲染，满足高性能与SEO需要</li>
+                <li>移动端大多使用 Vue 全家桶构建 SPA，提升开发效率的同时兼顾开发体验</li>
               </ul>
             </div>
             <div class="summary">
-              在职期间参与众多类似以上项目。长期思考尝试基于 Node.js 技术栈的大前端开发。对于web端开发效率、性能与用户体验、代码质量都有较多的思考与经验。曾获公司年度优秀员工。
+              长期思考尝试基于 Node.js 技术栈的大前端开发。对于web端开发效率、性能与用户体验、代码质量都有较多的思考与经验。获2018年公司年度优秀员工。
             </div>
           </div>
 
           <div class="item">
             <header class="item-hd company isoftstone">
               <h3 class="item-name">软通动力（武汉）<sub>MIS部门,非外包</sub></h3>
-              <span class="item-time">2015.12 至 2017.05</span>
+              <span class="item-time">2016.3 至 2017.05</span>
               <a class="btn item-more" href="javascript:;">web前端</a>
             </header>
             <div class="item-bd">
               <h4 class="item-des">iPSA采购管理系统</h4>
               <ul class="section-content">
-                <li>作为核心前端开发参与实施软通集团内部4万+员工日常使用的采购系统。包括用户端与管理端的采购、资产管理、订单合同管理、出入库等功能。</li>
-                <li>使用<code>Avalon.js</code> 作为核心框架，编写可维护性更高的前端代码，高效应对表单众多的业务需求。</li>
-                <li>编写基于 Avalon 官方的半成品 UI 库，根据业务需求定制封装基础 UI 组件，提高代码复用率，提升开发效率。</li>
+                <li>作为核心前端开发参与实施软通集团内部4万+员工日常使用的采购系统</li>
+                <li>使用<code>Avalon.js</code> 作为核心框架，编写可维护性更高的前端代码，高效应对表单众多的业务需。</li>
+                <li>根据业务需求定制封装基础<code>Avalon.js</code>UI 组件库，提高代码复用率，提升开发效率</li>
               </ul>
             </div>
             <div class="item-bd">
-              <h4 class="item-des">知识管理系统开发</h4>
+              <h4 class="item-des">知识管理系统</h4>
               <ul class="section-content">
-                <li>供部门内部使用的知识管理系统，基本功能完备的 CMS 系统，注册登录、发回帖、管理等功能。</li>
-                <li>既是内部需求也是<code>Avalon.js</code>前端框架的初步试用。以此项目作为试点，推翻部门前后端混合开发模式。同时初尝<code>Less</code>、<code>webpack</code>等工程化工具，新框架前端组件开发。</li>
+                <li>供部门内部使用的知识管理系统，基本功能完备的 CMS 系统，注册登录、发回帖、管理等功能</li>
+                <li><code>Avalon.js</code>前端框架的是水，部门用<code>jQuery</code>前后端混合开发的革命。同时初尝<code>Less</code>、<code>webpack</code>等工程化工具，新框架前端组件开发</li>
               </ul>
             </div>
 
             <div class="summary">
               在软通期间，选用新的前端框架，推进实现前后端分离。在团队内部积极宣扬新型前端开发职能，帮助几名实习生小伙伴成功认识并选择前端作为自己的发展方向。
             </div>
+          </div>
+
+          <div class="item">
+            <header class="item-hd company xqxj">
+              <h3 class="item-name">相交科技（武汉）</h3>
+              <span class="item-time">2015.10 至 2015.12</span>
+              <a class="btn item-more" href="javascript:;">web前端</a>
+            </header>
+            <div class="item-bd">
+              <h4 class="item-des">心情香蕉心理测试平台</h4>
+              <ul class="section-content">
+                <li>移动端心理测试应用。心理测试问答，在线心理咨询服务</li>
+                <li>基于<code>Bootstrap</code>框架修改构建产品的UI界面，学习使用<code>Angular.js</code>与JAVA后台服务交互</li>
+              </ul>
+            </div>
+
+            <div class="summary">
+                初入前端，在此期间专注于基础的提升，同时坚定了后续的前端开发之路
+              </div>
           </div>
         </div>
       </section>
@@ -183,15 +194,29 @@
           <!-- 博客系统 -->
           <div class="item">
               <header class="item-hd">
-                <h3 class="item-name">个人博客项目</h3>
-                <span class="item-time">代码托管于 <a href="https://github.com/DOTA2mm">Github</a>, 演示：<a href="https://blog/chenteng.me">Demo</a></span>
+                <h3 class="item-name">个人博客</h3>
+                <span class="item-time">代码托管于 <a href="https://github.com/DOTA2mm/blog-frontend">Github</a>, <a href="https://blog.chenteng.me">预览</a></span>
                 <a class="btn item-more" href="javascript:;">全栈开发</a>
               </header>
             <div class="item-bd">
               <ul>
-                <li>部署上线正在使用的个人博客，参考结合众多社区开源博客的技术栈选型，实现功能完善的博客系统，包括后台看板。</li>
-                <li>前端选用 Vue2.x 全家桶（<code>Vue.js</code>、<code>vuex</code>、<code>vue-router</code>）以及<code>Sass</code>、<code>Echarts</code> 等，结合Babel webpack 保证良好的开发体验与开发效率。</li>
-                <li>后端使用 <code>Express</code><code>mongoose</code> 等常见方案。使用 <code>Nginx</code>提供 web service 反向代理，<code>PM2</code>管理服务进程及日志。</li>
+                <li>前端选用 Vue 全家桶以及<code>Sass</code>、<code>Echarts</code> 等，有博文在线编辑管理，看板等功能</li>
+                <li>后端使用 <code>Express</code> + <code>mongoose</code>，使用 <code>Nginx</code>做反向代理，<code>PM2</code>管理服务进程及日志</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 查分系统 -->
+          <div class="item">
+              <header class="item-hd">
+                <h3 class="item-name">查分小应用</h3>
+                <span class="item-time">代码托管于 <a href="https://github.com/DOTA2mm/exam-scores">Github</a>, <a href="https://score.chenteng.me">预览</a></span>
+                <a class="btn item-more" href="javascript:;">全栈开发</a>
+              </header>
+            <div class="item-bd">
+              <ul>
+                <li>用于解决<a href="https://student-m.7net.cc">七天网络</a>查分功能阉割的问题，模拟调用七天接口，处理错题集分数计算总分</li>
+                <li>服务器端<code>Koa</code> + <code>Request</code>模拟客户端调用接口，前端用<code>React</code>全家桶 + <code>antd-mobile</code>完成UI</li>
               </ul>
             </div>
           </div>
@@ -200,7 +225,7 @@
           <div class="item">
               <header class="item-hd">
                 <h3 class="item-name">OAuth2 认证服务</h3>
-                <span class="item-time">代码托管于 <a href="https://github.com/DOTA2mm/web-authentication/tree/master/OAuth2.0">Github</a>, 暂未部署到服务器</span>
+                <span class="item-time">代码托管于 <a href="https://github.com/DOTA2mm/web-authentication/tree/master/OAuth2.0">Github</a></span>
                 <a class="btn item-more" href="javascript:;">全栈开发</a>
               </header>
             <div class="item-bd">
@@ -222,24 +247,16 @@
         <div class="section-bd">
           <div class="item">
             <header class="item-hd">
-              <span class="item-skill">HTML/CSS</span>
+              <span class="item-skill">web 前端</span>
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>熟练编写语义化的 HTML(5)，模块化的 CSS(3)，完成较复杂的页面布局</li>
-                <li>熟悉<code>Less, Sass</code>等 CSS预处理和模块化工具</li>
-              </ul>
-            </div>
-          </div>
-          <div class="item">
-            <header class="item-hd">
-              <span class="item-skill">JavaScript</span>
-            </header>
-            <div class="item-bd">
-              <ul class="section-content">
-                <li>熟悉原生 JavaScript, 对 JS 语言特性有深入理解 </li>
-                <li>熟悉 <code>ES.next</code> 新语法特性，习惯并熟练使用新的语言规范编写代码</li>
-                <li>熟悉Vue.js、jQuery 等常用 JS 框架及其生态，了解 React 等其他常见框架</li>
+                <li>熟练运用 CSS3、Html5 编写兼容主流浏览器的页面</li>
+                <li>熟悉Less, Sass等 CSS预处理和模块化工具</li>
+                <li>熟悉原生 JavaScript, ESNext 深入理解语言特性</li>
+                <li>熟练使用 Vue.js 框架及其生态，了解 React 等其他常见框架</li>
+                <li>熟悉 CommonJS、AMD、ES Module 等模块化规范，熟练使用 Webpack、Gulp 等构建打包工具</li>
+                <li>习惯使用 ESlint 等工具保持良好的代码规范，对 TypeScript 有基本了解并很感兴趣</li>
               </ul>
             </div>
           </div>
@@ -249,21 +266,9 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>掌握 Node.js 标准库及模型，多次在项目中实践 Node.js</li>
-                <li>熟悉 <code>Express</code> 、<code>Koa</code> 等框架及其生态的使用</li>
+                <li>掌握 Node.js 标准库及模型，有众多 Node.js 构建 web 服务实战经验</li>
+                <li>熟练 Express、Koa 等web框架及其生态的使用</li>
                 <li>基本 debug 能力，能快速定位问题</li>
-              </ul>
-            </div>
-          </div>
-          <div class="item">
-            <header class="item-hd">
-              <span class="item-skill">前端工程化</span>
-            </header>
-            <div class="item-bd">
-              <ul class="section-content">
-                <li>熟练使用 <code>Webpack</code>、<code>Gulp</code> 构建前端代码</li>
-                <li>熟悉 CommonJS、AMD、ES6 等模块化规范，能运用模块化、面向对象等方式编程</li>
-                <li>习惯使用 <code>ESlint</code> 等工具保持良好的代码规范，对 <code>TypeScript</code> 有基本了解并很感兴趣</li>
               </ul>
             </div>
           </div>
@@ -274,10 +279,12 @@
             </header>
             <div class="item-bd">
               <ul class="section-content">
-                <li>了解 <code>Go</code>语言，对使用 Golang 做 web 开发很感兴趣</li>
-                <li>掌握 HTTP 协议基本原理，熟悉 Fiddler 等辅助网络调试工具</li>
-                <li>掌握 Linux 服务器基本使用，服务在Linux机器的部署，对容器化技术感兴趣</li>
-                <li>掌握基本的 web 开发服务器端知识，常用基本 SQL 语句编写</li>
+                <li>掌握 HTTP 协议，能使用抓包工具分析请求快速定位问题</li>
+                <li>掌握基本 Linux 操作系统的使用，服务在 Linux 机器的部署、运维，国内云服务器使用</li>
+                <li>了解 Golang ，对使用 Golang 构建web 应用很感兴趣</li>
+                <li>掌握MySQL、MongoDB的基本使用，SQL 语句编写及Node.js ORM的使用</li>
+                <li>熟悉Git及Git服务的操作流程</li>
+                <li>擅用搜索引擎和社区资源解决问题</li>
               </ul>
             </div>
           </div>

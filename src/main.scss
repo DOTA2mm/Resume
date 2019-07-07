@@ -110,6 +110,11 @@ a {
       width: 100%;
       text-align: center;
     }
+    li iconfont {
+      @media print {
+        display: none;
+      }
+    }
   }
   .name {
     float: left;
@@ -155,6 +160,9 @@ a {
   .info {
     float: left;
     line-height: 26px;
+    sub {
+      font-size: 12px;
+    }
   }
   .contact {
     float: right;
@@ -230,6 +238,9 @@ a {
     height: 32px;
     margin: 10px auto 5px;
     overflow: hidden;
+    @media print {
+      margin: 0;
+    }
   }
   .section-bd {
     overflow: hidden;
@@ -247,7 +258,7 @@ a {
       margin-bottom: 20px;
     }
     .summary {
-      font-size: 90%;
+      // font-size: 90%;
       padding-left: 8px;
       border-left: 3px solid $color-green
     }
@@ -297,7 +308,8 @@ a {
     background-repeat: no-repeat;
     background-position: left center;
     &.company {
-      padding-left: 120px;
+      background-size: 50px;
+      padding-left: 60px;
       @media screen and (max-width: 720px) {
         padding-left: 0;
         background-image: none !important;
@@ -308,10 +320,13 @@ a {
       }
     }
     &.upchina {
-      background-image: url(./img/upchina_logo.png);
+      background-image: url(./img/upchina.png);
     }
     &.isoftstone {
-      background-image: url(./img/isoftstone_log.png);
+      background-image: url(./img/isoftstone.png);
+    }
+    &.xqxj {
+      background-image: url(./img/xqxj.jpg);
     }
     .item-time {
       display: inline-block;
