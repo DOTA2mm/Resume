@@ -29,6 +29,9 @@ a {
   text-decoration: none;
   color: $color-green;
   @include transition(all .2s ease-in-out);
+  @media print {
+    color: #333;
+  }
 }
 
 .last-modified {
@@ -374,7 +377,7 @@ a {
       font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
       font-size: 16px;
-      color: $color-green;
+      // color: $color-green;
     }
   }
   .section-content {
