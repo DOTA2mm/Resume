@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --open",
-    "pub": "cross-env NODE_ENV=production webpack --config webpack-dist.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config webpack-dist.config.js"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
